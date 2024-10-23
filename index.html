@@ -1,10 +1,21 @@
-<html>
-    <head></head>
-    <body>
-        <h2>MY PAGE</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+</head>
+<body>
+    <h1>My Page</h1>
 
-        <h4>Added content</h4>
+   <a href="content/content.html">Content</a>
+    <p>
+        <?php
+            date_default_timezone_set('America/New_York'); 
 
-        <a href="content/content.html">a Link</a>
-    </body>
+            echo "The current time is " . date('H:i:s');
+        ?>
+    </p>
+</body>
 </html>
+
